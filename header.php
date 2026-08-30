@@ -10,7 +10,6 @@ session_start();
 </head>
 <style>
     .box{
-        width:400px;
         display:flex;
         justify-content: space-evenly;
     }
@@ -24,14 +23,15 @@ session_start();
     <a href="logout.php"> Log Out</a>
     <a href="login.php">Login</a>
     <a href="register.php">Register</a>
+    <a href="manage-category.php">Add Category</a>
     </div>
     <hr>
     <?php if(isset($_SESSION['auth'])){?>
     <a>Welcome:<?php echo $_SESSION['auth']['name'];?></a>
     <a href="logout.php">Logout</a>
       <?php }else{?>
-    <a href="login.php">Login</a>
-    <a href="register.php">Register</a>
+    <a href="login.php"></a>
+    <a href="register.php"></a>
     <?php 
     }  ?>
     </hr>
